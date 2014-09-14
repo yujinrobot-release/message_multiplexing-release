@@ -1,0 +1,8 @@
+ros-indigo-mm-mux-demux (0.1.1-0saucy) saucy; urgency=high
+
+  * publisher and subscriber frontends.
+  * multiplexer and demultiplexer.
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Thu, 11 Sep 2014 15:00:00 -0000
+
+
