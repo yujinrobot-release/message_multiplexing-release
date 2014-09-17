@@ -1,5 +1,5 @@
 /**
- * @file /mm_mux_demux/include/mm_mux_demux/verbosity.hpp
+ * @file /mm_messages/include/mm_messages/verbosity.hpp
  * 
  * @brief Short description of this file.
  **/
@@ -7,8 +7,8 @@
 ** Ifdefs
 *****************************************************************************/
 
-#ifndef mm_mux_demux_VERBOSITY_HPP_
-#define mm_mux_demux_VERBOSITY_HPP_
+#ifndef mm_messages_VERBOSITY_HPP_
+#define mm_messages_VERBOSITY_HPP_
 
 /*****************************************************************************
 ** Includes
@@ -18,7 +18,7 @@
 ** Namespaces
 *****************************************************************************/
 
-namespace mm_mux_demux {
+namespace mm_messages {
 
 /*****************************************************************************
 ** Interfaces
@@ -32,6 +32,6 @@ struct Verbosity {
   };
 };
 
-} // namespace mm_mux_demux
+} // namespace mm_messages
 
-#endif /* mm_mux_demux_VERBOSITY_HPP_ */
+#endif /* mm_messages_VERBOSITY_HPP_ */
