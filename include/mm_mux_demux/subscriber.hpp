@@ -15,13 +15,10 @@
 *****************************************************************************/
 
 #include <ecl/utilities/function_objects.hpp>
+#include <mm_messages.hpp>
 #include <sstream>
 #include <string>
 #include "demux.hpp"
-#include <mm_messages/exceptions.hpp>
-#include <mm_messages/registry.hpp>
-#include <mm_messages/headers.hpp>
-#include <mm_messages/message.hpp>
 
 /*****************************************************************************
 ** Namespaces
