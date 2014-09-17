@@ -1,31 +1,35 @@
 /**
- * @file /mm_mux_demux/src/lib/publisher.cpp
+ * @file /mm_radio/include/mm_radio/publisher.hpp
  * 
  * @brief Short description of this file.
  **/
 /*****************************************************************************
+** Ifdefs
+*****************************************************************************/
+
+#ifndef mm_radio_PUBLISHER_HPP_
+#define mm_radio_PUBLISHER_HPP_
+
+/*****************************************************************************
 ** Includes
 *****************************************************************************/
 
-#include "../../include/mm_mux_demux/publisher.hpp"
+#include <ecl/time.hpp>
+#include <iostream>
+#include <mm_messages.hpp>
+#include <sstream>
+#include <string>
+#include <vector>
+#include "radio.hpp"
 
 /*****************************************************************************
 ** Namespaces
 *****************************************************************************/
 
-namespace mm_mux_demux {
+namespace mm_radio {
 
-/*****************************************************************************
-** Implementation
-*****************************************************************************/
+typedef mm_messages::Publisher<Radio> Publisher;
 
-Publisher::Publisher(const std::string &name, const std::string &url) :
-  name(name)
-{
-  if (!url.empty()) {
-    MessageMux::registerMux(name, url);
-  }
-  // else might want to check name is actually up
-}
+} // namespace mm_radio
 
-} // namespace mm_mux_demux
+#endif /* mm_radio_PUBLISHER_HPP_ */
