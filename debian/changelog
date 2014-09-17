@@ -1,8 +1,0 @@
-ros-indigo-mm-core-msgs (0.1.1-0trusty) trusty; urgency=high
-
-  * string encoder/decoder.
-  * public list of test message identifiers.
-
- -- Daniel Stonier <d.stonier@gmail.com>  Thu, 11 Sep 2014 15:00:00 -0000
-
-
