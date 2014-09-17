@@ -45,10 +45,10 @@ struct Foo {
 
 TEST(MessageMuxDemux,pubsub) {
   Foo foo;
-  mm_mux_demux::MessageMux::registerMux("dude", "ipc:///tmp/pubsub.ipc");
-  mm_mux_demux::MessageDemux::registerDemux("dude", "ipc:///tmp/pubsub.ipc");
+  mm_mux_demux::MessageMux::start("dude", "ipc:///tmp/pubsub.ipc");
+  mm_mux_demux::MessageDemux::start("dude", "ipc:///tmp/pubsub.ipc");
   mm_mux_demux::Subscriber<TestPubSub, std::string> subscriber("dude", &Foo::foo_cb, foo);
-  mm_mux_demux::Publisher publisher("dude", "ipc:///tmp/pubsub.ipc");
+  mm_mux_demux::Publisher publisher("dude");
   ecl::MilliSleep()(200); // let the connection establish itself
   publisher.publish(TestPubSub, std::string("dude"));
   ecl::MilliSleep()(500);
