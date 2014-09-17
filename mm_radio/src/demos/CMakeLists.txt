@@ -13,8 +13,5 @@ endmacro()
 # Executables
 ##############################################################################
 
-mm_mux_demux_add_demo(mm_pubsub)
-mm_mux_demux_add_demo(nanomsg_pubsub)
-mm_mux_demux_add_demo(nanomsg_pipeline)
-mm_mux_demux_add_demo(nanomsg_services)
-mm_mux_demux_add_demo(iproc)
+mm_radio_add_demo(mm_radio)
+mm_radio_add_demo(nanomsg_radio)

@@ -3,7 +3,7 @@
 ##############################################################################
 
 cmake_minimum_required(VERSION 2.8.3)
-project(mm_messages)
+project(mm_radio)
 
 ##############################################################################
 # Find Packages
@@ -11,8 +11,12 @@ project(mm_messages)
 
 find_package(catkin REQUIRED COMPONENTS
     ecl_build
-    ecl_containers
+    ecl_command_line
+    ecl_threads
+    ecl_time
     ecl_utilities
+    mm_core_msgs
+    mm_messages
     nanomsg
 )
 
@@ -25,8 +29,12 @@ catkin_package(
     LIBRARIES ${PROJECT_NAME}
     CATKIN_DEPENDS
         ecl_build
-        ecl_containers
+        ecl_command_line
+        ecl_threads
+        ecl_time
         ecl_utilities
+        mm_core_msgs
+        mm_messages
         nanomsg
 )
 
@@ -45,6 +53,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_subdirectory(include)
 add_subdirectory(src)
+#add_subdirectory(tests)
 
 ##############################################################################
 # Installs
