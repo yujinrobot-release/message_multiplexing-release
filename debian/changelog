@@ -1,7 +1,0 @@
-ros-indigo-mm-vision-msgs (0.1.1-0trusty) trusty; urgency=high
-
-  * image and image pair encoders/decoders.
-
- -- Daniel Stonier <d.stonier@gmail.com>  Thu, 11 Sep 2014 15:00:00 -0000
-
-
