@@ -1,9 +1,0 @@
-ros-indigo-mm-radio (0.2.0-0saucy) saucy; urgency=high
-
-  * gtest added
-  * first prototype of a 2-way pub-sub radio.
-  * nanomsg demo radio program
-
- -- Daniel Stonier <d.stonier@gmail.com>  Tue, 16 Sep 2014 15:00:00 -0000
-
-
