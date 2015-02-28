@@ -1,0 +1,12 @@
+Source: ros-indigo-mm-messages
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-ecl-build, ros-indigo-ecl-containers, ros-indigo-ecl-utilities, ros-indigo-nanomsg
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-mm-messages
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-ecl-build, ros-indigo-ecl-containers, ros-indigo-ecl-utilities, ros-indigo-nanomsg
+Description: Message definitions and serialisations for core messages.
