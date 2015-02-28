@@ -12,6 +12,7 @@ project(mm_radio)
 find_package(catkin REQUIRED COMPONENTS
     ecl_build
     ecl_command_line
+    ecl_exceptions
     ecl_threads
     ecl_time
     ecl_utilities
@@ -30,6 +31,7 @@ catkin_package(
     CATKIN_DEPENDS
         ecl_build
         ecl_command_line
+        ecl_exceptions
         ecl_threads
         ecl_time
         ecl_utilities
@@ -43,7 +45,7 @@ catkin_package(
 ##############################################################################
 
 # upgrade to c11 as soon as we are able.
-ecl_enable_cxx0x_compiler()
+ecl_enable_cxx11_compiler()
 add_definitions(${catkin_DEFINITIONS})
 include_directories(include ${catkin_INCLUDE_DIRS})
 
