@@ -1,6 +1,6 @@
 /**
  * @file /mm_radio/src/lib/radio.cpp
- * 
+ *
  * @brief Short description of this file.
  **/
 /*****************************************************************************
@@ -87,7 +87,7 @@ Radio::Radio(const Radio& other) {
 }
 
 Radio::~Radio() {
-  if ( socket > 0 ) {
+  if ( socket >= 0 ) {
     // only possible to have one connection to a pair at any one time
     // so don't worry about using nn_shutdown with endpoint ids.
     nn_close(socket);
@@ -121,9 +121,9 @@ void Radio::spin() {
     mm_messages::SubPacketHeader subheader = mm_messages::Message<mm_messages::SubPacketHeader>::decode(buffer + mm_messages::PacketHeader::size, mm_messages::SubPacketHeader::size);
     if ( verbosity > mm_messages::Verbosity::QUIET ) {
       std::cout << "[" << ecl::TimeStamp() << "] RadioDemux: [" << subheader.id << "]";
-      std::cout << "[" << bytes << "][";
+      std::cout << "[" << bytes << "]";
       if ( verbosity > mm_messages::Verbosity::LOW ) {
-        std::cout << std::hex;
+        std::cout << "[" << std::hex;
         for(unsigned int i=0; i < bytes; ++i ) {
           std::cout << static_cast<unsigned int>(*(buffer+i)) << " ";
         }
@@ -237,6 +237,7 @@ void Radio::startClient(const std::string& name,
   RadioMapConstIterator iter = radios().find(name);
   if ( iter == radios().end() ) {
     if (url.empty()) {
+      std::cout << "mm::Radio::startClient : url is empty" << std::endl;
       // TODO : throw an exception
     } else {
       std::pair<RadioMapIterator,bool> result;
@@ -244,6 +245,7 @@ void Radio::startClient(const std::string& name,
           RadioMapPair(name, std::make_shared<impl::Radio>(name, url, false, verbosity)));
     }
   } else if ( !url.empty() ) {
+    std::cout << "mm::Radio::startClient : already radio in the map [" << name << "][" << url << "]" << std::endl;
     // TODO : throw an exception, name-url already present.
   }
 }
