@@ -1,3 +1,32 @@
+## message_multiplexing (indigo) - 0.2.4-0
+
+The packages in the `message_multiplexing` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo message_multiplexing` on `Thu, 16 Jun 2016 04:26:57 -0000`
+
+These packages were released:
+- `message_multiplexing`
+- `mm_core_msgs`
+- `mm_eigen_msgs`
+- `mm_messages`
+- `mm_mux_demux`
+- `mm_radio`
+
+Version of package(s) in repository `message_multiplexing`:
+
+- upstream repository: https://github.com/stonier/message_multiplexing.git
+- release repository: https://github.com/yujinrobot-release/message_multiplexing-release.git
+- rosdistro version: `0.2.3-0`
+- old version: `0.2.3-0`
+- new version: `0.2.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.35`
+
+
 ## message_multiplexing (indigo) - 0.2.3-0
 
 The packages in the `message_multiplexing` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo message_multiplexing` on `Sun, 13 Mar 2016 07:52:27 -0000`
