@@ -1,0 +1,21 @@
+ros-indigo-mm-radio (0.2.4-0saucy) saucy; urgency=high
+
+  * bugfix for socket closing - was leaving sockets with id=0 hanging.
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Wed, 15 Jun 2016 15:00:00 -0000
+
+ros-indigo-mm-radio (0.2.2-0saucy) saucy; urgency=high
+
+  * remove some debug printing
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Fri, 09 Oct 2015 15:00:00 -0000
+
+ros-indigo-mm-radio (0.2.0-0saucy) saucy; urgency=high
+
+  * gtest added
+  * first prototype of a 2-way pub-sub radio.
+  * nanomsg demo radio program
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Tue, 16 Sep 2014 15:00:00 -0000
+
+
