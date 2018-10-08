@@ -1,0 +1,13 @@
+Source: ros-kinetic-mm-radio
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-build, ros-kinetic-ecl-command-line, ros-kinetic-ecl-exceptions, ros-kinetic-ecl-threads, ros-kinetic-ecl-time, ros-kinetic-ecl-utilities, ros-kinetic-mm-core-msgs, ros-kinetic-mm-messages, ros-kinetic-nanomsg
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-mm-radio
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-build, ros-kinetic-ecl-command-line, ros-kinetic-ecl-exceptions, ros-kinetic-ecl-threads, ros-kinetic-ecl-time, ros-kinetic-ecl-utilities, ros-kinetic-mm-core-msgs, ros-kinetic-mm-messages, ros-kinetic-nanomsg
+Description: Multiplexing many packet types across a two-way radio connection with publishers and subscribers.
+ Great for embedded connections by two-way serial or ethernet types.

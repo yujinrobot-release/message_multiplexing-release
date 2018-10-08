@@ -1,0 +1,21 @@
+ros-kinetic-mm-radio (0.2.4-0xenial) xenial; urgency=high
+
+  * bugfix for socket closing - was leaving sockets with id=0 hanging.
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Thu, 16 Jun 2016 04:00:00 -0000
+
+ros-kinetic-mm-radio (0.2.2-0xenial) xenial; urgency=high
+
+  * remove some debug printing
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sat, 10 Oct 2015 04:00:00 -0000
+
+ros-kinetic-mm-radio (0.2.0-0xenial) xenial; urgency=high
+
+  * gtest added
+  * first prototype of a 2-way pub-sub radio.
+  * nanomsg demo radio program
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Wed, 17 Sep 2014 04:00:00 -0000
+
+
