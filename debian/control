@@ -1,0 +1,12 @@
+Source: ros-kinetic-message-multiplexing
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://wiki.ros.org/message_multiplexing
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-message-multiplexing
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-mm-core-msgs, ros-kinetic-mm-eigen-msgs, ros-kinetic-mm-messages, ros-kinetic-mm-mux-demux, ros-kinetic-mm-radio
+Description: Lightweight communication patterns built on top of nanomsg for use in embedded scenarios where only a single socket connection is desirable.
