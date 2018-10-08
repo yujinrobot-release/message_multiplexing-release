@@ -1,3 +1,32 @@
+## message_multiplexing (kinetic) - 0.2.4-0
+
+The packages in the `message_multiplexing` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic message_multiplexing` on `Mon, 08 Oct 2018 11:22:14 -0000`
+
+These packages were released:
+- `message_multiplexing`
+- `mm_core_msgs`
+- `mm_eigen_msgs`
+- `mm_messages`
+- `mm_mux_demux`
+- `mm_radio`
+
+Version of package(s) in repository `message_multiplexing`:
+
+- upstream repository: https://github.com/stonier/message_multiplexing.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.2`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.40`
+
+
 ## message_multiplexing (indigo) - 0.2.4-0
 
 The packages in the `message_multiplexing` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo message_multiplexing` on `Thu, 16 Jun 2016 04:26:57 -0000`
