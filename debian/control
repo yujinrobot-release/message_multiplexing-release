@@ -1,0 +1,12 @@
+Source: ros-kinetic-mm-messages
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-build, ros-kinetic-ecl-containers, ros-kinetic-ecl-utilities, ros-kinetic-nanomsg
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-mm-messages
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-build, ros-kinetic-ecl-containers, ros-kinetic-ecl-utilities, ros-kinetic-nanomsg
+Description: Message definitions and serialisations for core messages.

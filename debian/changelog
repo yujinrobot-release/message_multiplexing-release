@@ -1,0 +1,20 @@
+ros-kinetic-mm-messages (0.2.4-0xenial) xenial; urgency=high
+
+  * debug macro to enable/disable message registration logs to stdout (default disable)
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Thu, 16 Jun 2016 04:00:00 -0000
+
+ros-kinetic-mm-messages (0.2.0-0xenial) xenial; urgency=high
+
+  * publisher centralised here for shared use by different messaging patterns.
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Wed, 17 Sep 2014 04:00:00 -0000
+
+ros-kinetic-mm-messages (0.1.1-0xenial) xenial; urgency=high
+
+  * message registry for run-time loading of messages
+  * (sub)packet header structures
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Fri, 12 Sep 2014 04:00:00 -0000
+
+
