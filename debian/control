@@ -1,0 +1,13 @@
+Source: ros-kinetic-mm-mux-demux
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-ecl-build, ros-kinetic-ecl-command-line, ros-kinetic-ecl-containers, ros-kinetic-ecl-formatters, ros-kinetic-ecl-threads, ros-kinetic-ecl-time, ros-kinetic-ecl-utilities, ros-kinetic-mm-core-msgs, ros-kinetic-mm-messages, ros-kinetic-nanomsg
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-mm-mux-demux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-ecl-build, ros-kinetic-ecl-command-line, ros-kinetic-ecl-containers, ros-kinetic-ecl-formatters, ros-kinetic-ecl-threads, ros-kinetic-ecl-time, ros-kinetic-ecl-utilities, ros-kinetic-mm-core-msgs, ros-kinetic-mm-messages, ros-kinetic-nanomsg
+Description: Multiplexing many packet types across a single connection.
+ Great for embedded connections by serial or ethernet types.
